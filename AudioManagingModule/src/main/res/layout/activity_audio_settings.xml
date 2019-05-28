@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AudioSettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_alignEnd="@+id/back"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="-62dp"
+            android:layout_toEndOf="@+id/back"
+            app:srcCompat="@drawable/home2" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="@string/audio_settings_description" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp">
+
+        <Button
+            android:id="@+id/audio_file_managing_button"
+            style="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/audio_file_localy_button"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/manage"
+            android:clickable="false"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="manage" />
+
+        <Button
+            android:id="@+id/audio_file_localy_button"
+            style="@style/AppTheme.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/audio_file_server_button"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/import_export_locally"
+            android:clickable="false"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="emport/export localy" />
+
+        <Button
+            android:id="@+id/audio_file_server_button"
+
+            android:text="import/export server"
+            style="@style/AppTheme.Button"
+            android:layout_weight="1"
+            android:clickable = "false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/import_export_button"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            />
+
+        </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,5 +1,7 @@
 package com.example.emobadaragaminglib.Components;
 
+import android.view.View;
+
 import com.example.emobadaragaminglib.Base.Game;
 import com.example.emobadaragaminglib.Base.Image;
 import com.example.emobadaragaminglib.Base.Screen;
@@ -7,7 +9,7 @@ import com.example.emobadaragaminglib.Base.Screen;
 /**
  * Main component in this library. This is what the user can see and interact with
  */
-public class Sprite {
+public class Sprite{
     private Image image;
     private int x;
     private int y;
@@ -15,6 +17,8 @@ public class Sprite {
     private int width;
     private boolean isStatic =true;
     private boolean isDragged;
+
+
 
     /**
      * Constructor
